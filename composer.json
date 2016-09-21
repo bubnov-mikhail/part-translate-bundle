@@ -1,0 +1,28 @@
+{
+    "name": "bubnovKelnik/part-translate-bundle",
+    "description": "Bundle for Symfony3. Integrates twig filter for translating parts of the string",
+    "keywords":["symfony", "symfony bundle", "bundle", "twig", "filter", "translate", "parts"],
+    "type":"library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "symfony/symfony": "~3.0",
+        "symfony/twig-bundle": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bubnov\\PartTranslateBundle\\": "src/PartTranslateBundle"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mihail Bubnov",
+            "email": "bubnov.mihail@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0"
+        }
+    }
+}

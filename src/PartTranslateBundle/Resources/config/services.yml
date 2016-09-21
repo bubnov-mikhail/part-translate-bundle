@@ -1,0 +1,6 @@
+services:
+    twig.partTranslate:
+        class: Bubnov\PartTranslateBundle\Twig\Extension\PartTranslateExtension
+        arguments: ["@translator"]
+        tags:
+            - { name: twig.extension }
