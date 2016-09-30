@@ -14,7 +14,8 @@ class PartTranslateExtension extends \Twig_Extension
      *
      * @param TranslatorInterface $translator
      */
-    public function __construct(TranslatorInterface $translator) {
+    public function __construct(TranslatorInterface $translator)
+    {
         $this->translator = $translator;
     }
 
@@ -31,8 +32,8 @@ class PartTranslateExtension extends \Twig_Extension
     /**
      * Finds all %tokens% in string and translates them
      *
-     * @param  $string String with markers in format %marker_without_spaces%
-     * @return String
+     * @param string $string String with markers in format %marker_without_spaces%
+     * @return string
      */
     public function onPartTranslateFilter($string = '')
     {
@@ -42,9 +43,9 @@ class PartTranslateExtension extends \Twig_Extension
         }
         $search = [];
         $replace = [];
+        
         foreach ($parts[1] as $p => $part) {
-            if($parts[0][$p] == '%'.$this->translator->trans($part).'%')
-            {
+            if ($parts[0][$p] == '%'.$this->translator->trans($part).'%') {
                 continue;
             }
             $search[] = $parts[0][$p];
