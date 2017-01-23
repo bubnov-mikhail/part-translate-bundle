@@ -40,7 +40,7 @@
 
 Bundle code is written by Mikhail Bubnov
 bubnov.mihail@gmail.com
-https://github.com/bubnovKelnik
+https://github.com/bubnov-mikhail
 
 
 ### License
